@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="template :: dochead">
+</head>
+<body>
+
+	<div th:replace="template :: navigation"></div>
+
+	
+	<h2 th:text= "${title}"></h2>
+	<p th:text="${body}"></p>
+	<p>created on <span th:text="${created}"></span></p>
+</body>
+</html>
